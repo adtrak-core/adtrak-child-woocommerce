@@ -1,0 +1,48 @@
+button,
+.button,
+input[type="submit"],
+input[type="reset"] {
+  appearance: none;
+  transition: .3s;
+	text-decoration: none;
+	display: inline-block;
+  border: 0;
+  padding: 7px 13px;
+  font-size: inherit;
+  color: color('white');
+  background-color: color('button-default');
+  cursor: pointer;
+
+	&:disabled {
+    cursor: default;
+    background-color: grey;
+
+    &:hover {
+        background-color: grey;
+    }
+	}
+
+	&:hover,
+  &:focus {
+    background-color: color('button-hover');
+	}
+
+  &:active {
+
+  }
+}
+
+.button--small {
+  padding: 4px 9px;
+}
+
+/// EXAMPLE BUTTONS
+.button--black {
+  background-color: color('black');
+	color: color('white');
+}
+
+.button--white {
+  background-color: color('white');
+	color: color('black');
+}

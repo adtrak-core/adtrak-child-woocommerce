@@ -1,0 +1,36 @@
+// add colours here. Called in scss by doing color(primary).
+$color: (
+  'white': #fff,
+  'black': #000,
+  'dark-grey': #2e2e2e,
+  'default': #000,
+  'link-default': #F1533A,
+  'link-hover': #000000,
+  'button-default': #F1533A,
+  'button-hover': #000000,
+);
+
+// Media Queries
+$sizes: (
+  'max': 1368px
+);
+
+$breakpoints: (
+  'small': (min-width: 450px),
+  'medium': (min-width: 800px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1200px),
+);
+
+// Fonts
+$primaryFont: ('helvetica', 'sans-serif');
+$headerFont: ('helvetica', 'sans-serif');
+
+// Grid Sizing
+$columns: 12;
+$gutter-width: 2rem;
+$half-gutter-width: $gutter-width / 2;
+$gutter-compensation: -1 * $half-gutter-width;
+
+// General
+$base-margin: 2rem;

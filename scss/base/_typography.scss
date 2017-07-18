@@ -1,0 +1,87 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $headerFont;
+  font-weight: inherit;
+  margin: $base-margin 0 ($base-margin/2);
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+	font-size: 4.2rem; //42px
+}
+
+h2 {
+	font-size: 3.8rem; //28px
+}
+
+h3 {
+	font-size: 3.2rem; //24px
+}
+
+h4 {
+	font-size: 2.6rem; //20px
+}
+
+h5 {
+	font-size: 2.1rem; //18px
+}
+
+h6 {
+	font-size: 1.7rem; //16px
+}
+
+p {
+	font-size: 1.7rem; //16px
+  line-height: 1.55;
+  margin-bottom: ($base-margin / 1.5);
+}
+
+ul, ol {
+	font-size: 1.7rem; //16px
+  padding-left: 15px;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	transition: .3s all ease-in-out;
+  text-decoration: none;
+  color: color('link-default');
+
+	&:visited {
+
+	}
+
+  &:active {
+
+  }
+
+	&:focus, &:hover {
+    color: color('link-hover');
+	}
+}
+
+small {
+  font-size: 13px;
+	font-size: 1.3rem; // 14px;
+}

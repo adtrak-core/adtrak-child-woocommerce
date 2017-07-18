@@ -1,0 +1,154 @@
+.my-account {
+  .woocommerce {
+    width: 100%;
+    &:after {
+      @extend %clearfix;
+    }
+    .login {
+      max-width: 400px;
+    }
+  }
+  .page__single-article {
+    margin-bottom: 0;
+  }
+}
+
+#customer_login .col-1 {
+  padding: 20px 0;
+}
+
+.woocommerce-MyAccount-navigation {
+  width: 100%;
+  display: none;
+
+  @media (min-width: 700px) {
+    display: block;
+    width: 25%;
+    float: left;
+  }
+
+  @media (min-width: 900px) {
+    width: 17%;
+  }
+
+  ul {
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0 -1px 30px 0;
+    position: relative;
+    li {
+      margin-bottom: -1px;
+    }
+    a {
+      letter-spacing: 1px;
+      transition: ease-in-out all .3s;
+      padding: 14px;
+      display: block;
+    }
+    .is-active a,
+    a:focus,
+    a:hover {
+
+    }
+    span {
+      float: right;
+    }
+  }
+}
+
+.woocommerce-MyAccount-content {
+  width: 100%;
+  padding: 20px;
+  min-height: 306px;
+  
+  @media (min-width: 700px) {
+    width: 75%;
+    float: right;
+    margin-left: -2px;
+  }
+  @media (min-width: 900px) {
+    width: 83%;
+  }
+  .button {
+    margin-right: 10px;
+  }
+  .shop_table {
+    max-width: 100%;
+  }
+  .customer_details,
+  .order_details {
+    td:first-child,
+    th {
+      width: 70%;
+    }
+  }
+  .customer_details {
+    margin-bottom: 20px;
+  }
+}
+
+.col-1,
+.col-2 {
+  width: 100%;
+  max-width: 320px;
+
+  @media (min-width: 660px) {
+    width: 48%;
+    max-width: 100%;
+    float: left;
+    margin-right: 4%;
+  }
+}
+
+.col-2 {
+  padding: 20px;
+  @media (min-width: 660px) {
+    margin-right:0;
+  }
+}
+
+form.login .button {
+  margin-bottom: 20px;
+}
+
+.col2-set.addresses {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  .col-1,
+  .col-2 {
+    width: 50%;
+  }
+}
+
+.woocommerce-MyAccount-content form {
+  width: 100%;
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  input[type="radio"] {
+    margin-top: 2px;
+  }
+  input[type="text"],
+  p,
+  select {
+    margin-top: 0;
+    width: 100%;
+  }
+  fieldset {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 0;
+  }
+  .form-row-first,
+  .form-row-last {
+    width: 49%;
+    float: left;
+  }
+  .form-row-first {
+    margin-right: 2%;
+  }
+}

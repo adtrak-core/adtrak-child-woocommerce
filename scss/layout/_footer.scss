@@ -1,0 +1,5 @@
+.site-footer {
+	@extend %container;
+  padding: 0 10px;
+  margin-top: $base-margin;
+}
